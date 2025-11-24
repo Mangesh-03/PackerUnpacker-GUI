@@ -12,20 +12,19 @@ Users must sign in or sign up before accessing the Packer/Unpacker interface.
 ```
 PackerUnpacker/
       └── Mangesh/
-           ├── Starter.java
-           │
-           ├── Login/
-           │     ├── UsernamePasswordGUI.java
-           │     └── LoginPageX.java
-           │
-           ├── GUI/
-           │     ├── GUIPX.java
-           │     ├── GUIU.java
-           │     └── PackerUnpackerInterface.java
-           │
-           └── Logic/
-                 ├── MarvellousPacker.java
-                 └── MarvellousUnpacker.java
+      │     ├── Login/
+      │     │     ├── UsernamePasswordGUI.java
+      │     │     └── LoginPageX.java
+      │     │
+      │     ├── GUI/
+      │     │     ├── GUIPX.java
+      │     │     ├── GUIU.java
+      │     │     └── PackerUnpackerInterface.java
+      │     │
+      │     └── Logic/
+      │           ├── MarvellousPacker.java
+      │           └── MarvellousUnpacker.java
+      └── Starter.java
 ```      
 ---
 
