@@ -10,22 +10,22 @@ Users must sign in or sign up before accessing the Packer/Unpacker interface.
 ## 📂 Project Structure
 
 ```
-FullPackerUnpacker/
- └── src/
+PackerUnpacker/
       └── Mangesh/
-      │     ├── Login/
-      │     │     ├── UsernamePasswordGUI.java
-      │     │     └── LoginPageX.java
-      │     │
-      │     ├── GUI/
-      │     │     ├── GUIPX.java
-      │     │     ├── GUIU.java
-      │     │     └── PackerUnpackerInterface.java
-      │     │
-      │     └── Logic/
-      │           ├── MarvellousPacker.java
-      │           └── MarvellousUnpacker.java
-      └── Starter.java
+           ├── Starter.java
+           │
+           ├── Login/
+           │     ├── UsernamePasswordGUI.java
+           │     └── LoginPageX.java
+           │
+           ├── GUI/
+           │     ├── GUIPX.java
+           │     ├── GUIU.java
+           │     └── PackerUnpackerInterface.java
+           │
+           └── Logic/
+                 ├── MarvellousPacker.java
+                 └── MarvellousUnpacker.java
 ```      
 ---
 
@@ -94,7 +94,6 @@ Reads packed file and reconstructs original structure.
 
 ## 👨‍💻 Author
 **Mangesh Bedre**  
-Computer Engineering • Java • Systems Programming • Reverse Engineering
 
 ---
 
