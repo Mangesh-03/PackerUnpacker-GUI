@@ -30,9 +30,9 @@ PackerUnpacker/
 
 ## 🚀 How to Compile
 
-### 1️⃣ Open terminal inside `src/` folder:
+### 1️⃣ Open terminal inside `PackerUnpacker/` folder:
 ```
-cd FullPackerUnpacker/src
+cd PackerUnpacker
 ```
 
 ### 2️⃣ Compile all Java files:
