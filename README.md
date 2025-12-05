@@ -100,5 +100,7 @@ Reads packed file and reconstructs original structure.
 - Add encryption to packed file  
 - Save user credentials permanently  
 - Add dark mode  
-- Add file chooser dialog  
+- Add file chooser dialog
+---
+
 
