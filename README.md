@@ -4,9 +4,9 @@
 ## 📌 Overview
 This project provides a **file packing and unpacking utility** with a **GUI-based login system**.  
 
-• Implemented metadata preservation during packing/unpacking.
-• Designed GUI using Swing for user-friendly interaction. 
-• Designed and implemented a secure login interface to authenticate users before      system access.
+• Implemented metadata preservation during packing/unpacking.<br>
+• Designed GUI using Swing for user-friendly interaction. <br>
+• Designed and implemented a secure login interface to authenticate users before      system access.<br>
 • Built with scalability in mind, allowing future enhancements like role-based access and password recovery.
 
 ---
