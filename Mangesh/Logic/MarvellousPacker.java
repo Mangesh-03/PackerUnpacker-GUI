@@ -41,7 +41,7 @@ public class MarvellousPacker
 
                 if(bRet == false)
                 {
-                    System.out.println("Unacle to create pack file");
+                    System.out.println("Unable to create pack file");
                     return ;
                 }
 

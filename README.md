@@ -3,7 +3,11 @@
 
 ## 📌 Overview
 This project provides a **file packing and unpacking utility** with a **GUI-based login system**.  
-Users must sign in or sign up before accessing the Packer/Unpacker interface.
+
+• Implemented metadata preservation during packing/unpacking.
+• Designed GUI using Swing for user-friendly interaction. 
+• Designed and implemented a secure login interface to authenticate users before      system access.
+• Built with scalability in mind, allowing future enhancements like role-based access and password recovery.
 
 ---
 
@@ -37,7 +41,7 @@ cd PackerUnpacker
 
 ### 2️⃣ Compile all Java files:
 ```
-javac Mangesh/Login/*.java Mangesh/GUI/*.java Mangesh/Logic/*.java Mangesh/Main.java -d .
+javac Mangesh/Login/*.java Mangesh/GUI/*.java Mangesh/Logic/*.java Starter.java 
 ```
 
 ---
@@ -45,7 +49,7 @@ javac Mangesh/Login/*.java Mangesh/GUI/*.java Mangesh/Logic/*.java Mangesh/Main.
 ## ▶️ How to Run
 
 ```
-java Mangesh.Starter
+java Starter
 ```
 
 This opens the Login Page GUI.
@@ -67,7 +71,7 @@ Features:
 - Select folder to pack
 - Enter output packed filename
 - Validations
-- Packs all files recursively into one `.packed` file
+- Packs all files into one `.packed or .txt` file
 
 ---
 
@@ -77,7 +81,7 @@ Logic: `MarvellousUnpacker`
 
 Features:
 - Enter packed input file
-- Extracts all files and directories correctly
+- Extracts all files correctly
 
 ---
 
@@ -90,17 +94,17 @@ Reads all files and writes metadata + content to a packed file.
 Reads packed file and reconstructs original structure.
 
 ---
-
-## 👨‍💻 Author
-**Mangesh Bedre**  
-
----
-
 ## ⭐ Future Ideas
 - Add encryption to packed file  
 - Save user credentials permanently  
 - Add dark mode  
 - Add file chooser dialog
 ---
+
+## 👨‍💻 Author
+**Mangesh Bedre**  
+
+---
+
 
 
