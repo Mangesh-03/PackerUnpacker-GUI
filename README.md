@@ -7,7 +7,8 @@ This project provides a **file packing and unpacking utility** with a **GUI-base
 • Implemented metadata preservation during packing/unpacking.<br>
 • Designed GUI using Swing for user-friendly interaction. <br>
 • Designed and implemented a secure login interface to authenticate users before      system access.<br>
-• Built with scalability in mind, allowing future enhancements like role-based access and password recovery.
+• Built with scalability in mind, allowing future enhancements like role-based access and password recovery.<br>
+• The system uses inbuilt byte-level encryption and decryption to protect file contents during storage and transfer. 
 
 ---
 
@@ -26,12 +27,82 @@ PackerUnpacker/
       │     │     └── PackerUnpackerInterface.java
       │     │
       │     └── Logic/
+      │           ├── GUIPX.java
       │           ├── MarvellousPacker.java
       │           └── MarvellousUnpacker.java
       └── Starter.java
 ```      
 ---
 
+## Work Flow Daigram
+                  +----------------------------------+
+                  |        LoginPageGUI              |
+                  +----------------------------------+
+                  | - frame : JFrame                 |
+                  | - usernameField : JTextField     |
+                  | - passwordField : JPasswordField |
+                  | - loginButton : JButton          |
+                  | - resultLabel : JLabel           |
+                  +----------------------------------+
+                  | + actionPerformed()              |
+                  | + validateLogin() : boolean      |
+                  +----------------------------------+
+                              |
+                              | success
+                              v
+                  +----------------------------------+
+                  |   PackerUnpackerInterface        |
+                  +----------------------------------+
+                  | - frame : JFrame                 |
+                  | - packButton : JButton           |
+                  | - unpackButton : JButton         |
+                  +----------------------------------+
+                  | + actionPerformed()              |
+                  +----------------------------------+
+                        |                     |
+                        |                     |
+                  opens |                     | opens
+                        v                     v
+                  +--------------------+   +--------------------+
+                  |       GUIPX        |   |        GUIU        |
+                  | (Packer GUI)       |   | (Unpacker GUI)     |
+                  +--------------------+   +--------------------+
+                  | - fobj : JFrame    |   | - fobj : JFrame    |
+                  | - packButton       |   | - unpackButton     |
+                  | - backButton       |   | - backButton       |
+                  | - ResultLabel      |   | - ResultLabel      |
+                  | - TextFields       |   | - FileTextField    |
+                  +--------------------+   +--------------------+
+                  | + actionPerformed()|   | + actionPerformed()|
+                  +--------------------+   +--------------------+
+                        |                     |
+                        |                     |------------------------------------------|
+                        |                                                                |
+                        |                                                                | uses
+                        | uses                                                           | 
+                        |                                                                |
+                        v                                                                v   
+
+
+                  +-------------------------------------------+   +-------------------------------------------+
+                  |           MarvellousPacker                |   |           MarvellousUnpacker              |
+                  +-------------------------------------------+   +-------------------------------------------+
+                  | - packFile : String                       |   | - packFile : String                       |      
+                  | - srcFolder : String                      |   +-------------------------------------------+       |
+                  +-------------------------------------------+   | + UnpackingActivity()                     |
+                  | + PackingActivity()                       |   +-------------------------------------------+
+                  +-------------------------------------------+                     |
+                        |                                                           |
+                        | uses                                                      | uses 
+                        v                                                           v 
+                  +-------------------------------------------+   +-------------------------------------------+
+                  |              CryptoUtil                   |   |              CryptoUtil                   |
+                  +-------------------------------------------+   +-------------------------------------------+
+                  | + encrypt(byte[]) : byte[]                |   | + encrypt(byte[]) : byte[]                |
+                  | + decrypt(byte[]) : byte[]                |   | + decrypt(byte[]) : byte[]                |
+                  +-------------------------------------------+   +-------------------------------------------+
+
+---
 ## 🚀 How to Compile
 
 ### 1️⃣ Open terminal inside `PackerUnpacker/` folder:
